@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dub.co - Link Management Infrastructure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .description {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        .tab {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: none;
+            margin-right: 0.5rem;
+        }
+        .tab.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .feature-list, .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+        }
+        .feature-icon {
+            margin-right: 0.5rem;
+            color: #007bff;
+        }
+        .badge {
+            background-color: #f0f0f0;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .button-icon {
+            margin-left: 0.5rem;
+        }
+        .repo-activity img {
+            max-width: 100%;
+            height: auto;
+        }
+        .repo-activity p {
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dub.co</h1>
+        <p class="description">
+            The open-source link management infrastructure for modern marketing teams.
+        </p>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="features">Features</button>
+            <button class="tab" data-tab="tech">Tech Stack</button>
+        </div>
+
+        <div class="tab-content active" id="features">
+            <div class="card">
+                <h2 class="card-title">Key Features</h2>
+                <p class="card-description">What makes Dub.co powerful</p>
+                <div class="feature-list">
+                    <div class="feature-item"><span class="feature-icon">↗️</span> Advanced Analytics</div>
+                    <div class="feature-item"><span class="feature-icon">↗️</span> Branded Links</div>
+                    <div class="feature-item"><span class="feature-icon">↗️</span> QR Codes</div>
+                    <div class="feature-item"><span class="feature-icon">↗️</span> Personalization</div>
+                    <div class="feature-item"><span class="feature-icon">↗️</span> Team Collaboration</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tech">
+            <div class="card">
+                <h2 class="card-title">Tech Stack</h2>
+                <p class="card-description">Technologies powering Dub.co</p>
+                <div class="tech-stack">
+                    <span class="badge">Next.js</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">Tailwind</span>
+                    <span class="badge">Upstash</span>
+                    <span class="badge">Tinybird</span>
+                    <span class="badge">PlanetScale</span>
+                    <span class="badge">NextAuth.js</span>
+                    <span class="badge">BoxyHQ</span>
+                    <span class="badge">Turborepo</span>
+                    <span class="badge">Stripe</span>
+                    <span class="badge">Resend</span>
+                    <span class="badge">Vercel</span>
+                    <span class="badge">Pangea</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2 class="card-title">⚖️ Self-Hosting</h2>
+                <p>You can self-host Dub.co for greater control over your data and design.</p>
+                <a href="#" class="button">Read Guide <span class="button-icon">↗️</span></a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">🍴 Contributing</h2>
+                <ul>
+                    <li>Open an issue for bugs</li>
+                    <li>Follow local development guide</li>
+                    <li>Make pull requests for improvements</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">📜 License</h2>
+                <p>Dub is open-source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version.</p>
+                <a href="#" class="button">View License <span class="button-icon">↗️</span></a>
+            </div>
+        </div>
+
+        <div class="card repo-activity">
+            <h2 class="card-title">Repo Activity</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dub.co repo activity">
+            <p>Dub.co repo activity – generated by Axiom</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.getAttribute('data-tab');
+
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
